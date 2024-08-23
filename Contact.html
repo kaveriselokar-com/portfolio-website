@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    
+    <style>
+.footer {
+    position: relative;
+} 
+
+@media(max-width: 768px) {
+    .footer {
+      position: relative;
+  }
+}
+
+        
+.container {
+    border-radius: 5px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;    
+  }
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical; 
+  }
+
+input[type=submit] {
+    background-color:  #464555;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+ @media screen and (min-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+ }
+
+
+    </style>
+</head>
+<body>
+
+    <nav id="navbar" class="">
+        <div class="nav-wrapper">
+            <div class="logo">
+            <a href="index.html">portfolio</a>
+        </div>
+          
+        <ul id="menu">
+             <li><a href="index.html">Home</a></li>
+             <li><a href="About.html">About</a></li>
+             <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        </div>
+   </nav>
+   <br><br>
+
+
+   <div class="container">
+    <form action="" method="">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name..">
+        <label for="email">Email</label>
+      <input type="text" id="email" name="email" placeholder="Your email..">
+      <label for="message">message</label>
+      <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  
+  
+  <br><br><br><br><br><br><br><br><br><br>
+  
+   <footer class="footer">
+    <p class="footer-content">©2024</a></p>
+  </footer>
+
+</body>
+</html>
