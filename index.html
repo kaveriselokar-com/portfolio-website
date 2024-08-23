@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="script" href="preloader.js">
+    <link rel="stylesheet" href="/Css code/animate.css">
+    <style>
+        .footer {
+            position: absolute;
+        }
+
+        @media(max-width: 768px) {
+          .footer {
+            position: relative;
+          }
+        }
+    </style>
+</head>
+<body>
+
+  <div class="loader_bg">
+    <div class="loader"></div>
+  </div>
+
+    <nav id="navbar" class="">
+      <span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fas fa-bars"></i>
+      </span>
+        <div class="nav-wrapper">
+            <div class="logo">
+            <a href="index.html">portfolio</a>
+        </div> 
+        <ul class="main-nav" id="js-menu">
+             <li><a href="index.html" class="nav-links">Home</a></li>
+             <li><a href="About.html" class="nav-links">About</a></li>
+             <li><a href="Contact.php" class="nav-links">Contact</a></li>
+        </ul>
+        </div>
+   </nav>
+
+   <br><br><br>
+   
+   <div class="container">
+   <div class="col">
+   <div class="card">
+   <div class="card__side card__side--front card__side--front-1">
+      <div class="frame">
+        <p>interest</p>
+      </div>
+      </div>
+      <div class="card__side card__side--back card__side--back-1">
+      <div class="frame">
+        <p>I am particularly interested in the field of web development as a future career field. I am in pursuit of learning more advaned sklls in order to improve myself.</p>
+        <small>&diams; Web Dev &diams;</small>
+      </div>
+      </div>
+      </div>
+      </div>
+  <div class="col">
+      <div class="card">
+      <div class="card__side card__side--front card__side--front-2">
+      <div class="frame">
+        <p>me</p>
+      </div>
+      </div>
+      <div class="card__side card__side--back card__side--back-2">
+      <div class="frame">
+        <p>I am currently a 3rd year college student studying in City Premier College, enrolled in the course BCCA i.e Bcahelor of Commerce with Computer Applications.</p>
+        <small>&spades; Kaveri &spades;</small>
+      </div>
+      </div>
+      </div>
+      </div>
+    <div class="col">
+      <div class="card">
+      <div class="card__side card__side--front card__side--front-3">
+      <div class="frame">
+        <p>portfolio</p>
+      </div>
+      </div>
+      <div class="card__side card__side--back card__side--back-3">
+      <div class="frame">
+        <p>This is a portfolio website made for the 1st task for my internship, and as a way of improving my skills. This is a valuable project I have spent my hours on.</p>
+        <small>&hearts; my work &hearts;</small>
+      </div>
+      </div>
+      </div>
+      </div>
+    </div>
+
+    <!--
+    how to create the flip card animation
+    1] create 2 div inside the card element which represent the front and back side.
+    2] set absolute positioning for both sides with top and left properties set to 0 to position them in the same loction as the card.
+    3] add backface-visibility: hidden; to hide the back of the card from view.
+    4] rotate the backside element 180 degrees to flip them.
+    5] when card is hovered, roate the front side by -180 degrees and backside by 0 degrees.
+    6] add perspective property to give a 3D effect to the flip.
+    -->
+    
+    <footer class="footer">
+      <p class="footer-content">©2024</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function(){
+            $('.loader_bg').fadeToggle();
+        }, 1500);
+    </script>
+  
+</body>
+</html>

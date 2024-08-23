@@ -1,0 +1,141 @@
+  #navbar {
+      /* background:  #fadddd; */
+      /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=647fff&c2=db74af&gt=c&gd=dtl
+*/
+background: #647FFF;
+background: conic-gradient(from 315deg, #647fff, #db74af);
+      color: rgb(13, 26, 38);
+      position: fixed;
+      top: 0;
+      height: 60px;
+      line-height: 60px;
+      width: 100vw;
+      border: 1px solid;
+      box-shadow: 2.5px 5px #888888;
+    }
+
+  .nav-wrapper {
+      margin: auto;
+      text-align: center;
+      width: 70%;
+    }
+
+    .navbar-toggle {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      cursor: pointer;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 24px;
+    }
+    
+    .active {
+      display: block;
+    }
+  /*Media query for nav-wrapper*/
+  @media(max-width: 768px) {
+      .nav-wrapper {
+        width: 90%;
+      }
+    } 
+
+  @media(max-width: 638px) {
+      .nav-wrapper {
+        width: 100%;
+      }
+    }
+
+    .navbar-toggle {
+      display: none;
+    }
+  .logo {
+    float: left;
+    margin-left: 28px;
+    font-size: 1rem;
+    height: 60px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  /*media query for logo*/
+  @media(max-width: 768px) {
+    .logo {
+      margin-left: 5px;
+      margin-bottom: 1px;
+    }
+  }
+  
+  #navbar ul {
+    float: right;
+    list-style: none;
+    text-align: right;
+    transition: transform 0.5s ease-out;
+    -webkit-transition: transform 0.5s ease-out;
+  }
+
+
+  #navbar li {
+    display: inline-block;
+  }
+
+  #navbar li a {
+    color: rgb(13, 26, 38);
+    display: block;
+    font-size: 0.8em;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 0 20px;
+    padding: 0 4px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+  }
+
+  @media (max-width: 480px) and (max-width: 768px) {
+    #navbar li a {
+      padding: 0 0px;
+      font-size: 0.7em;
+      margin: 0 15px;
+    }
+  }
+
+  /*applying animation to navbar*/ 
+  #navbar li a:hover {
+    color: rgb(255, 255, 255);
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+  }
+
+  #navbar li a:before, #navbar li a:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    bottom: -1px;
+    background: rgb(13, 26, 38);
+  }
+
+  #navbar li a:before {
+    left: 0;
+    transition: 0.5s;
+  }
+
+  #navbar li a:after {
+    background: rgb(13, 26, 38);
+    right: 0;
+  }
+
+  #navbar li a:hover:before {
+    background: rgb(13, 26, 38);
+    width: 100%;
+    transition: width 0.5s cubic-bezier((0.22, 0.61, 0.36, 1));
+  }
+
+  #navbar li a:hover:after {
+    background: transparent;
+    width: 100%;
+  }

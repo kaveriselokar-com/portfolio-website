@@ -1,0 +1,20 @@
+/*styling the footer*/
+.footer {
+    height: 6vh;
+    /* background: #464555;
+    color: #fadddd; */
+    background: #647FFF;
+    background: conic-gradient(from 315deg, #647fff, #db74af);
+    margin: 5vh 0 0 0;
+    position: relative;
+    bottom: 0;
+    width: 100%; 
+  }
+  
+  .footer-content {
+    text-align: center;
+    padding: 3vh 0 0 0;
+    font-size: 1rem;
+  }
+
+  
